@@ -8,9 +8,3 @@ b2g and a gaia checkout.
 
 A new X session is also installed, that runs b2g in full screen.
 Just do a long press on the [Home] key to end the session.
-
-TODO
-====
-
-Currently we only install gaia at first run, while it should be
-updated when a new version is available.

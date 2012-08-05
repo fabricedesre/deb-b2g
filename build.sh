@@ -36,18 +36,19 @@ cat > tmp/DEBIAN/control << EOF
 Package: b2g
 Version: ${VERSION}
 Maintainer: Fabrice Desré <fabrice@desre.org>
+Homepage: https://github.com/fabricedesre/deb-b2g
 Architecture: amd64
 Description: Boot 2 Gecko (http://www.mozill.org/b2g) is a web based operating system.
-  The project’s proposed architecture eliminates the need for apps to be 
-  built on platform-specific native APIs. Using HTML5, developers everywhere
-  can write directly to the Web; they can create amazing user experiences and
-  apps unencumbered by the rules and restrictions of closely controlled
-  platforms.
-  As with all Mozilla projects, the Boot to Gecko project is based entirely on
-  open standards and the source code is open and accessible to all. Where open
-  standards are missing (including telephony, SMS, camera, bluetooth, USB and
-  NFC), we're working with standards bodies and other vendors to create them.
-  .
+ The project’s proposed architecture eliminates the need for apps to be 
+ built on platform-specific native APIs. Using HTML5, developers everywhere
+ can write directly to the Web; they can create amazing user experiences and
+ apps unencumbered by the rules and restrictions of closely controlled
+ platforms.
+ As with all Mozilla projects, the Boot to Gecko project is based entirely on
+ open standards and the source code is open and accessible to all. Where open
+ standards are missing (including telephony, SMS, camera, bluetooth, USB and
+ NFC), we're working with standards bodies and other vendors to create them.
+ .
 EOF
 
 fakeroot dpkg-deb -b tmp b2g_${VERSION}_i386.deb
