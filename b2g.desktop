@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=B2G
+Comment=This session logs you into Boot 2 Gecko
+Exec=/opt/b2g/session.sh
+Icon=/opt/b2g/icon.png
+Type=Application
